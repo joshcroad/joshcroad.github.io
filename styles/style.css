@@ -1,51 +1,88 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
 * {
-  font-size: 1em;
-  font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
-html, body {
-  line-height: 2em;
-  background: #e9e9e9;
-  color: #888;
-  margin: 0 auto; }
-
-body {
-  width: 28em; }
-
-em {
-  font-size: 0.875em; }
-
-h1 {
-  font: 4em 'Open Sans';
-  color: #666;
-  line-height: 1em;
-  margin: 0; }
-
-a {
-  color: #4489A3;
-  text-decoration: none; }
-
-a:hover {
-  color: #35677A; }
-
-.jay-z {
-  margin: 3.5em 0 2em;
-  padding: 0 1em; }
-
-p {
-  font-size: 1.5em;
-  line-height: 1.3em; }
-
-@media screen and (max-width: 28em) {
-  body {
-    width: 100%; }
 }
 
-@media screen and (max-width: 25em) {
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font: 15px/1.5 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+  background: rgba(52, 152, 219, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2em;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.5rem;
+}
+
+.jay-z {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.blue-ivy {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  width: 25em;
+}
+
+em {
+  display: block;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 42rem) {
   h1 {
-    font-size: 3em; }
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .jay-z {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 36rem) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 28rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
